@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Funday Restaurant</title>
+    <link rel="shortcut icon" type="image/png" href="Images/chef cartoon.jpeg">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick-theme.css"> 
+    <link rel="stylesheet" type="text/css" href="slick.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+</head>
+<body>
+
+    <!-- Navbar Session -->
+    <nav id="navbar-example2" class="navbar bg-dark px-3 md-3 fixed-top">
+        <a class="navbar-brand" href="#"><img src="Images/logo.png"></a>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1" style=" color: orangered;
+                border-bottom:orangered solid 2px;">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading3">MENU</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading4">TEAM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading5">GALLERY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading6">BLOG</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading7">PRICING</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading8">RESERVATION</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading9">CONTACT US</a>
+            </li>
+
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-cart-shopping fs-3"></i><sup class="fs-3 cartno">0</sup>
+                     </button>
+                    <ul class="dropdown-menu" style="margin-left: -270px; width: 350%;" id="cartlist">
+                        <h4 class="subtotal"></h4>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- Home Session -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary rounded-2" tabindex="0">
+        <div id="scrollspyHeading1" style="margin-top: -10px;">
+            <div class="card text-bg-dark">
+                <img src="Images/banner.jpg " class="card-img" alt="images">
+                <div class="card-img-overlay mt-5">
+
+                    <!-- Dark navbar start from here -->
+                    <nav id="navbar-example2" class="navbar light-dark px-5 md-5 d-none">
+                        <a class="navbar-brand" href="#"><img src="Images/logo.png"></a>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading1" style=" color: orangered;border-bottom:orangered solid 2px;">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading2">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading3">MENU</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading4">TEAM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading5">GALLERY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading6">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading7">PRICING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading8">RESERVATION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading9">CONTACT US</a>
+                            <li>
+                                <!-- Add to Cart -->
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-cart-shopping fs-3"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" style="margin-left: -250px; width: 300%;" id="cartlist">
+                                        <h4 class="subtotal"></h4>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <h1 class="text-center display-1 din mt-5">Dinner With Us <span class="txt"></span></h1>
+                    <h1 class="text-center din" style="color: orangered;">Accidental appearances</h1>
+                    <p class="card-text text-center fs-5">The Food Funday Restaurant Palace, Pune, has some of the<br> most renowned fine-dining restaurants in India. Discover tantalising <br>Indian, Middle Eastern and Oriental cuisines, served with a dash of tradition and a sprinkling of innovation.</p><br>
+                    <button type="button" class="btn-lg mx-auto d-block bookbtn w-25"> BOOK MY TABLE </button>
+                    <div id="fd1">
+                        <div class="fd2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- About Us Session -->
+        <div id="scrollspyHeading2" class="bg-light">
+            <div class="container">
+                <div class="d-flex flex-row mb-3 mt-5">
+                    <div class="p-2">
+                        <h1 class="din txt">About Us</h1>
+                        <h4>IT STARTED, QUITE SIMPLY, LIKE THIS...</h4>
+                        <p class="text-secondary">A restaurant is a business that prepares and serves food and drinks to customers.Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services.
+                        <br><br>
+                        Restaurants vary greatly in appearance and offerings, including a wide variety of cuisines and service models ranging from inexpensive fast-food restaurants and cafeterias to mid-priced family restaurants, to high-priced luxury establishments.
+                        <br><br>
+                        A forerunner of the modern restaurant is the thermopolium, an establishment in Ancient Greece and Ancient Rome that sold and served ready-to-eat food and beverages. These establishments were somewhat similar in function to modern fast food restaurants.</p>
+                    </div>
+                    <div class="p-2">
+                        <div class="position-relative">
+                            <img src="Images/about-main.jpg" class="rounded-circle border border-white border-5">
+                            <div class="position-absolute top-0 end-0">
+                                <img src="Images/about-inset.jpg" class="rounded-circle border border-white border-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Today's Special Session -->
+            <div class="card text-bg-dark border-0">
+                <img src="Images/special_menu_bg.jpg">
+                <div class="card-img-overlay">
+                    <div class="container">
+                        <h1 class="din txt text-center mt-5 mb-3">Today's Special</h1>
+                        <h5 class="text-center text-white mt-5 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm incididunt ut labore et dolore magna <br> aliqua. Ut enim ad minim venia,nostrud exercitation ullamco.</h5>
+                        <div class="d-flex flex-row mb-3 align-items-center gap-4 autoplay mt-5">
+                            <div class="p-2 position-relative hide">
+                                <img src="Images/special-menu-1.jpg" class="border border-white border-5 w-100">
+                                <div class="menuitem bg-transparent position-absolute top-50  start-50 translate-middle-x">
+                                    <h4>SALMON STEAK</h4>
+                                    <hr color="white" width="100%" size="6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                            <div class="p-2 position-relative hide">
+                                <img src="Images/special-menu-2.jpg" class="border border-white border-4 w-100">
+                                <div class="menuitem bg-transparent position-absolute top-50 start-50 translate-middle-x">
+                                    <h4>ITALION PIZZA</h4>
+                                    <hr color="white" width="100%" size="6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                            <div class="p-2 position-relative hide">
+                                <img src="Images/special-menu-3.jpg" class="border border-white border-4 w-100">
+                                <div class="menuitem bg-transparent position-absolute top-50 start-50 translate-middle-x">
+                                    <h4>VEG.ROLL</h4>
+                                    <hr color="white" width="100%" size="6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                            <div class="p-2 position-relative hide">
+                                <img src="Images/special-menu-1.jpg" class="border border-white border-4 w-100">
+                                <div class="menuitem bg-transparent position-absolute top-50  start-50 translate-middle-x">
+                                    <h4>SALMON STEAK</h4>
+                                    <hr color="white" width="100%" size="6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                            <div class="p-2 position-relative hide">
+                                <img src="Images/special-menu-2.jpg" class="border border-white border-4 w-100">
+                                <div class="menuitem bg-transparent position-absolute top-50 start-50 translate-middle-x">
+                                    <h4>ITALION PIZZA</h4>
+                                    <hr color="white" width="100%" size="6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Our Menu Session -->
+        <div id="scrollspyHeading3">
+            <div class="container mt-5">
+                <h1 class="din txt text-center">Our Menu</h1>
+                <p class="fs-5 text-center mt-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                <ul class="nav nav-pills mt-5 bg-light" id="myTab" role="tablist">
+                    <!--first div canape images -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                            <h4 class="p-2" style="border-bottom: 2px solid white;">STARTERS</h4>
+                            <img src="Images/canape.png" height="50" width="50">
+                        </button>
+                    </li>
+                    <!--second div dinner images -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                            <h4 class="p-2" style="border-bottom: 2px solid white;">MAIN DISHES</h4>
+                            <img src="Images/dinner.png" height="50" width="50">
+                        </button>
+                    </li>
+                    <!--third div desert images -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                            <h4 class="p-2" style="border-bottom: 2px solid white;">DESERTS</h4>
+                            <img src="Images/desert.png" height="50" width="50">
+                        </button>
+                    </li>
+                    <!--fourth div canape images -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">
+                            <h4 class="p-2" style="border-bottom: 2px solid white;">DRINKS</h4>
+                            <img src="Images/drinks.png" height="50" width="50">
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <!--first div starters -->
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <div class="row p-4 gap-4">
+                            <div class="col">
+                                <!-- starters img-1 -->
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="Images/menu-item-thumbnail-01.jpg" alt="images" class="rounded-circle border border-white border-5">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h3 class="din txt">GARLIC BREAD</h3>
+                                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum placeat eum.</p>
+                                    </div>
+                                    <div class="h-25 w-25 text-center rounded-circle border border-danger p-3">
+                                        <h3>$8.5</h3>
+                                    </div>
+                                </div>
+                                <!-- starters img-2 -->
+                                <div class="d-flex align-items-center mt-4">
+                                    <div class="flex-shrink-0">
+                                        <img src="Images/menu-item-thumbnail-03.jpg" alt="images" class="rounded-circle border border-white border-5">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h3 class="din txt">BBQ CHICKEN WINGS</h3>
+                                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum placeat eum.</p>
+                                    </div>
+                                    <div class="h-25 w-25 text-center rounded-circle border border-danger p-3">
+                                        <h3>$10</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- starters img-3 -->
+                            <div class="col">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="Images/menu-item-thumbnail-02.jpg" alt="images" class="rounded-circle border border-white border-5">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h3 class="din txt">MIXED SALAD</h3>
+                                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum placeat eum.</p>
+                                    </div>
+                                    <div class="h-25 w-25 text-center rounded-circle border border-danger p-3">
+                                        <h3>$25</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- second div MAIN DISHES -->
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="row p-4 gap-4">
+                            <div class="col">
+                                <!-- main dishes img-1 -->
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="Images/menu-item-thumbnail-04.jpg" alt="images" class="rounded-circle border border-white border-5">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h3 class="din txt">MEAT FEAST PIZZA</h3>
+                                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum placeat eum.</p>
+                                    </div>
+                                    <div class="h-25 w-25 text-center rounded-circle border border-danger p-3">
+                                        <h3>$5</h3>
+                                    </div>
+                                </div>
+                                <!-- main dishes img-2 -->
+                                <div class="d-flex align-items-center mt-4">
+                                    <div class="flex-shrink-0">
+                                        <img src="Images/menu-item-thumbnail-06.jpg" alt="images" class="rounded-circle border border-white border-5">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h3 class="din txt">SPICY MEATBALLS</h3>
+                                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum placeat eum.</p>
+                                    </div>
+                                    <div class="h-25 w-25 text-center rounded-circle border border-danger p-3">
+                                        <h3>$6.5</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main dishes img-3 -->
+                            <div class="col">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="Images/menu-item-thumbnail-05.jpg" alt="images" class="rounded-circle border border-white border-5">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h3 class="din txt">CHICKEN TIKKA MASALA</h3>
+                                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum placeat eum.</p>
+                                    </div>
+                                    <div class="h-25 w-25 text-center rounded-circle border border-danger p-3">
+                                        <h3>$15</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- third div DESERTS img -->
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        <div class="row p-4 gap-4">
+                            <div class="col">
+                                <!-- DESERTS img-1 -->
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="Images/menu-item-thumbnail-07.jpg" alt="images" class="rounded-circle border border-white border-5">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h3 class="din txt">CHOCOLATE FUDGECARE</h3>
+                                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum placeat eum.</p>
+                                    </div>
+                                    <div class="h-25 w-25 text-center rounded-circle border border-danger p-3">
+                                        <h3>$5</h3>
+                                    </div>
+                                </div>
+                                <!-- DESERTS img-2 -->
+                                <div class="d-flex align-items-center mt-4">
+                                    <div class="flex-shrink-0">
+                                        <img src="Images/menu-item-thumbnail-09.jpg" alt="images" class="rounded-circle border border-white border-5">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h3 class="din txt">CHICKEN TIRRA MASALA</h3>
+                                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum placeat eum.</p>
+                                    </div>
+                                    <div class="h-25 w-25 text-center rounded-circle border border-danger p-3">
+                                        <h3>$6.5</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- DESERTS img-3 -->
+                            <div class="col">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="Images/menu-item-thumbnail-08.jpg" alt="images" class="rounded-circle border border-white border-5">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h3 class="din txt">CHICKEN TIKKA MASALA</h3>
+                                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum placeat eum.</p>
+                                    </div>
+                                    <div class="h-25 w-25 text-center rounded-circle border border-danger p-3">
+                                        <h3>$15</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fourth div DRINKS img-->
+                    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+                        <div class="row p-4 gap-4">
+                            <div class="col">
+                                <!-- DRINKS img-1 -->
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="Images/menu-item-thumbnail-10.jpg" alt="images" class="rounded-circle border border-white border-5">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h3 class="din txt">MEAT FEAST PIZZA</h3>
+                                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum placeat eum.</p>
+                                    </div>
+                                    <div class="h-25 w-25 text-center rounded-circle border border-danger p-3">
+                                        <h3>$5</h3>
+                                    </div>
+                                </div>
+                                <!-- DRINKS img-2 -->
+                                <div class="d-flex align-items-center mt-4">
+                                    <div class="flex-shrink-0">
+                                        <img src="Images/menu-item-thumbnail-08.jpg" alt="images" class="rounded-circle border border-white border-5">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h3 class="din txt">SPICY MEATBALLS</h3>
+                                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum placeat eum.</p>
+                                    </div>
+                                    <div class="h-25 w-25 text-center rounded-circle border border-danger p-3">
+                                        <h3>$6.5</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- DRINKS img-3 -->
+                            <div class="col">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="Images/menu-item-thumbnail-09.jpg" alt="images" class="rounded-circle border border-white border-5">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h3 class="din txt">CHICKEN TIKKA MASALA</h3>
+                                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum placeat eum.</p>
+                                    </div>
+                                    <div class="h-25 w-25 text-center rounded-circle border border-danger p-3">
+                                        <h3>$15</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- menu items -->
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-4 g-4 mb-4 menus"></div>
+            </div>
+        </div>
+       
+
+        <!-- Our Team Session -->
+        <div id="scrollspyHeading4">
+            <div class="card text-bg-dark border-0">
+                <img src="Images/team_bg.jpg" class="img-fluid" alt="images" style="height: 150vh;">
+                <div class="card-img-overlay text-center container mt-5">
+                    <h1 class="card-title din display-2 fw-bold">Our Team</h1>
+                    <p class="card-text fs-5 mt-5 fw-bold">Front Desk Staff, Marketing Coordinator, Maintenance Supervisor, Head of Security, Food and Beverage Manager, and Housekeeping Supervisor.</p>
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                        <div class="col">
+                            <div class="card h-100 team">
+                                <img src="Images/staff-01.jpg" class="card-img-top" alt="images">
+                                <div class="card-body">
+                                    <h2 class="card-title din">John Doggett</h2>
+                                    <p class="card-text fs-6">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <h3 class="text-body-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15"/>
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
+                                        </svg>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100 team">
+                                <img src="Images/staff-02.jpg" class="card-img-top" alt="images">
+                                <div class="card-body">
+                                    <h2 class="card-title din">Jeffrey Spender</h2>
+                                    <p class="card-text fs-6">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <h3 class="text-body-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15"/>
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
+                                    </svg>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 team">
+                        <img src="Images/staff-03.jpg" class="card-img-top" alt="images">
+                        <div class="card-body">
+                            <h2 class="card-title din">Monica Reyes</h2>
+                            <p class="card-text fs-6">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.</p>
+                        </div>
+                        <div class="card-footer">
+                            <h3 class="text-body-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15"/>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
+                                </svg>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        </div>
+        
+        
+        <!-- Our Gallery Session -->
+        <div id="scrollspyHeading5">
+            <div class="container mt-5 text-center">
+                <h1 class="din txt">Our Gallery</h1>
+                <p class="mt-3 text-secondary fs-5 text-center">Dinner & Diner | AUA Language CenterDinner usually means the main meal of the day which is usually eaten in the evening in the west</p>
+                <!--div-1 images- -->
+                <div class="row mt-5 g-2">
+                    <div class="col-8">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1"><img src="images/gallery_01.jpg" alt="image" class="w-100 h-75 d-block mx-auto img-fluid"/></a>
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Supreme Pizza</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/gallery_01.jpg" alt="image" class="w-100 h-75 d-block mx-auto img-fluid"/>
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                        <p class="text-center text-white">Our Test Kitchen calls this classic pizza recipe an "old-school supreme pizza." This Supreme Pizza ...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--div-1 images-2 -->
+                    <div class="col-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img
+                        src="images/gallery_02.jpg" alt="image"
+                        class="w-100 h-75 d-block mx-auto img-fluid"/></a>
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Drinks</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/gallery_02.jpg" alt="image" class="w-100 h-75 d-block mx-auto img-fluid"/></a>
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                        <p class="text-center text-white">Drinks | Food photography, Food drink photography, Cocktail photography</p>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--div-2 images-3 -->
+                <div class="row g-2" style="margin-top: -135px;">
+                    <div class="col-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img
+                        src="images/gallery_03.jpg" alt="image" class="w-100 h-50 d-block mx-auto img-fluid"/></a>
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Dal Tadka</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/gallery_03.jpg" alt="image" class="w-100 h-50 d-block mx-auto img-fluid"/></a>
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                        <p class="text-center text-white">Split Pigeon Peas, Mung Lentils, red lentils, water, turmeric powder, ...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--div-2 images-4 -->
+                    <div class="col-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal4"><img
+                          src="Images/gallery_04.jpg" alt="image"class="w-100 h-50 d-block mx-auto img-fluid"/></a>
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sandwich Famous</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="Images/gallery_04.jpg" alt="image"class="w-100 h-50 d-block mx-auto img-fluid"/></a>
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                        <p class="text-center text-white"> Veggie Sandwich Famous Fast Food </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--div-2 images-5 -->
+                    <div class="col-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal5"><img
+                        src="images/gallery_05.jpg" alt="image" class="w-100 h-50 d-block mx-auto img-fluid"/></a>
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Dal Batti Recipe</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/gallery_05.jpg" alt="image" class="w-100 h-50 d-block mx-auto img-fluid"/></a>
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                        <p class="text-center text-white">Khandeshi dal batti recipe   |   Varan batti Jalgaon Special</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--div-3 images-6 -->
+                <div class="row g-2" style="margin-top: -270px;">
+                    <div class="col-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal6"><img
+                        src="images/gallery_06.jpg" alt="image" class="w-100 d-block mx-auto img-fluid" height="30"/></a>
+                        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Dining Table</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                <div class="modal-body">
+                                    <img src="images/gallery_06.jpg" alt="image" class="w-100 d-block mx-auto img-fluid" height="30"/></a>
+                                </div>
+                                <div class="modal-footer bg-dark">
+                                    <p class="text-center text-white">Dinner table setup with delicious food ready to be served</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--div-3 images-7 -->
+                <div class="col-8">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal7"><img
+                    src="images/gallery_10.png" height="40" alt="image" class="w-100 h-75 d-block mx-auto img-fluid"/></a>
+                    <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Veg Rice</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/gallery_10.png" height="40" alt="image" class="w-100 h-75 d-block mx-auto img-fluid"/></a>
+                                </div>
+                                <div class="modal-footer bg-dark">
+                                    <p class="text-center text-white">Veg fried rice recipe | Chinese fried rice recipe | How to make fried rice</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- div-4 images-8 -->
+            <div class="row g-2" style="margin-top: -80px;">
+                <div class="col-4">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal8"><img
+                    src="images/gallery_08.jpg" alt="image" class="w-100 h-75 d-block mx-auto img-fluid"/></a>
+                    <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Veg Burger + French Fries + Soft Drink</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/gallery_08.jpg" alt="image" class="w-100 h-75 d-block mx-auto img-fluid"/></a>
+                                </div>
+                                <div class="modal-footer bg-dark">
+                                    <p class="text-center text-white">   Veg crispy patty burger with french fries and soft drink</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- div-4 images-9 -->
+                <div class="col-4">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal9"><img src="images/gallery_09.jpg" alt="image" class="w-100 h-75 d-block mx-auto img-fluid"/></a>
+                    <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Burgers</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/gallery_09.jpg" alt="image" class="w-100 h-75 d-block mx-auto img-fluid"/></a>
+                                </div>
+                                <div class="modal-footer bg-dark">
+                                    <p class="text-center text-white">This Burger Recipe covers everything needed to make delightful veggie burgers from scratch, ...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- div-4 images-10 -->
+                <div class="col-4">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal10">
+                    <img src="images/dahipuri.jpeg" alt="image" class="w-100 h-75 d-block mx-auto img-fluid"/></a>
+                    <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Dahi Puri</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/dahipuri.jpeg" alt="image" class="w-100 h-75 d-block mx-auto img-fluid"/></a>
+                                </div>
+                                <div class="modal-footer bg-dark">
+                                    <p class="text-center text-white">Dahi puri is one of the ultimate Indian Food Funday Restaurant recipes!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Our Blog Session -->  
+        <div id="scrollspyHeading6">
+            <div class="container-fluid mt-5" style="background-image: url('Images/blog_bg.jpg'); background-repeat: no-repeat;  background-size: cover; background-attachment: fixed;  text-align: center;"><br>
+                <h1 class="din text-white mt-5 mb-5">Our Blogs</h1><br>
+                <div class="container mx-auto">
+                    <!-- first blog div 1 -->
+                    <div class="row g-2">
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="Images/featured-image-01.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body mt-5">
+                                            <p class="text-secondary">25 NOVEMBER, 2014</p><hr>
+                                            <h3 class="card-title">LATEST RECIPES JUST IN!</h3><hr>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">BY John Doggett</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- first blog div 2 -->
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="Images/featured-image-02.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body mt-5">
+                                            <p class="text-secondary">02 NOVEMBER, 2014</p><hr>
+                                            <h3 class="card-title">NEW RECRUITS HAVE ARRIVED!</h3><hr>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">BY Jeffrey Spender</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- second blog div 1 -->
+                    <div class="row g-2">
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="Images/featured-image-03.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body mt-5">
+                                            <p class="text-secondary">04 NOVEMBER, 2014</p><hr>
+                                            <h3 class="card-title">BAKING TIPS FROM THE PROS</h3><hr>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">BY Monica Reyes</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- second blog div 2 -->
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="Images/featured-image-04.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body mt-5">
+                                            <p class="text-secondary">12 NOVEMBER, 2014</p><hr>
+                                            <h3 class="card-title">ALL YOUR EGGS BELONG TO US</h3><hr>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">BY John Doggett</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <button type="button" class="btn-lg mx-auto d-block bookbtn w-25 mb-3">VIEW THE BLOGS</button><br><br><br>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Pricing Session -->
+        <div id="scrollspyHeading7" style="background-image: url('Images/full-bg.png');">
+            <div class="container mt-5 text-center p-4">
+                <h1 class="din txt">Pricing</h1>
+                <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, perspiciatis. Totam, cupiditate sapiente. Debitis aspernatur, quae vero molestias ratione rerum voluptatibus accusantium, consequatur eius dignissimos a numquam hic minima. Exercitationem?</p>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- first div basic -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="p-4" style="background-color: orangered;">
+                                <img src="Images/store.png" class="w-25 mx-auto d-block img-fluid h-50" alt="...">
+                                <h5 class="text-white fw-bold">BASIC</h5>
+                            </div>
+                            <div class="bg-light p-4">
+                                <h1>$30/<span style="color:orangered">Month</span></h1>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group text-center w-100 list-group-flush">
+                                    <li class="list-group-item"><i class="fa-solid fa-check"></i> One Websits</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-check"></i> One User</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-check"></i> GB Bandwidth</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-xmark"></i> 2GB Stroge</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-xmark"></i> Offline Work</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-check"></i> 24X7 Support</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                               <button type="button" class="btn-lg mx-auto d-block w-100 purchasebtn">Purchase Now !</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- second div pro -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="p-4" style="background-color: orangered;">
+                                <img src="Images/food.png" class="w-25 mx-auto d-block img-fluid h-50" alt="...">
+                                <h5 class="text-white fw-bold">PRO</h5>
+                            </div>
+                            <div class="bg-light p-4">
+                                <h1>$60/<span style="color:orangered">Month</span></h1>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group text-center w-100 list-group-flush">
+                                    <li class="list-group-item"><b><i class="fa-solid fa-check"></i></b> One Websits</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-check"></i> One User</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-check"></i> GB Bandwidth</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-check"></i> 2GB Stroge</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-check"></i> Offline Work</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-check"></i> 24X7 Support</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn-lg mx-auto d-block w-100 purchasebtn">Purchase Now !</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- third div platinum -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="p-4" style="background-color: orangered;">
+                                <img src="Images/coffee.png" class="w-25 mx-auto d-block img-fluid h-50" alt="...">
+                                <h5 class="text-white fw-bold">PLATINUM</h5>
+                            </div>
+                            <div class="bg-light p-4">
+                                <h1>$90/<span style="color:orangered">Month</span></h1>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group text-center w-100 list-group-flush">
+                                    <li class="list-group-item"><i class="fa-solid fa-check"></i> One Websits</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-check"></i> One User</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-check"></i> GB Bandwidth</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-check"></i> 2GB Stroge</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-check"></i> Offline Work</li>
+                                    <li class="list-group-item"><i class="fa-solid fa-check"></i> 24X7 Support</li>
+                                  </ul>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn-lg mx-auto d-block w-100 purchasebtn">Purchase Now !</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Rservaion Session-->
+        <div id="scrollspyHeading8">
+            <div class="container mt-5 p-4 text-center">
+                <h1 class="din txt block-text">Reservations</h1>
+                <h3 class="mt-5">BOOKING FORM</h3>
+                <p class="mb-5 text-secondary">PLEASE FILL OUT ALL REQUIRED* FIELDS. THANKS!</p>
+                <div class="container">
+                    <table class="table table-borderless w-75" align="center" cellspacing="0">
+                        <tbody>
+                            <tr><td><input type="text" class="form-control" placeholder="Name" aria-label="First name"></td>
+                                <td><input type="email" class="form-control" placeholder="E-mail ID" aria-label="First name"></td>
+                            </tr>
+                            <tr>    
+                                <td><input type="text" class="form-control" placeholder="Contact No." aria-label="First name"></td>
+                                <td><select class="form-select" aria-label="Default select example">
+                                    <option selected>No. of persons</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td><input type="date" class="form-control" placeholder="Date" aria-label="First name"></td>
+                                <td><input type="time" class="form-control" placeholder="Time" aria-label="First name"></td>
+                            </tr>
+                            <tr>
+                                <td><select class="form-select" aria-label="Default select example">
+                                    <option selected>Perferred Food</option>
+                                    <option value="">Indain</option>
+                                    <option value="">Continental</option>
+                                    <option value="">Mexican</option>
+                                </select></td>
+                                <td><select class="form-select" aria-label="Default select example">
+                                    <option selected>Occasion</option>
+                                    <option value="">Wedding</option>
+                                    <option value="">Birthday</option>
+                                    <option value="">Anniversary</option>
+                                </select></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn-lg mx-auto d-block w-25 purchasebtn">BOOK MY TABLE</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!--CONTACT US-->
+        <div id="scrollspyHeading9">
+            <div class="container-fluid backimg1 p-5 text-white">
+                <h1 class="din fw-bolder display-3">Newsletter</h1>
+                <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <div class="input-group mb-3 w-50 m-auto mt-4 position-relative">
+                    <input type="email" class="form-control" placeholder="Enter your E-Mail Id " aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <button class="newsbtn" type="button" id="button-addon2"><a href="#"><i class="fa-regular fa-paper-plane"></i></a></button>
+                  </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid backimg2 p-5 text-white text-start">
+            <img src="Images/logo.png" class="mx-auto d-block">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col">
+                        <h3 class="din txt">About us</h3>
+                        <p>Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis dis parturient montes.</p>
+                        <a href ="#" class="fs-4 p-2"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href ="#" class="fs-4 p-2"><i class="fa-brands fa-twitter"></i></a>
+                        <a href ="#" class="fs-4 p-2"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href ="#" class="fs-4 p-2"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href ="#" class="fs-4 p-2"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+
+                    <div class="col">
+                        <h3 class="din txt">New Menu</h3>
+                        <a href="#" class="fs-6 p-2">Italian Bomba Sandwich</a><br>
+                        <a href="#" class="fs-6 p-2">Double Dose of Pork Belly</a><br>
+                        <a href="#" class="fs-6 p-2">Spicy Thai Noodles</a><br>
+                        <a href="#" class="fs-6 p-2">Triple Truffle Trotters</a><br>
+                    </div>
+
+                    <div class="col">
+                        <h3 class="din txt">Contact Us</h3>
+                        <p class="text-white"><i class="fa-solid fa-signs-post txt me-2"></i>6 E Esplanade, St Albans VIC 3021, Australia</p>
+                        <p class="text-white"><i class="fa-solid fa-mobile-screen-button txt me-2"></i>+91 80005 89080</p>
+                        <p class="text-white"><i class="fa-solid fa-envelope txt me-2"></i>support@foodfunday.com</p> 
+                    </div>
+
+                    <div class="col">
+                        <h3 class="din txt">Opening Hours</h3>
+                        <h6>Monday-Thursday</h6>
+                        <p class="text-seconday">11.00 AM - 9.00 PM</p>
+                        <h6>Friday-Saturday</h6>
+                        <p class="text-seconday">11.00 AM - 5.00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer div-->
+        <div class="container-fluid footerdiv p-3">
+            <p>Copyright © 2024 Food Funday is powered by<span class="text-dark">&nbsp Jayesh Deore <a href="#"><img src="Images/icon_top.png" class="float-end"></a></span></p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="slick.js"></script>
+    <script src="slick.main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.autoplay').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            });
+        })
+    </script>
+</body>
+</html>
+<script>
+    var typed=new Typed(".txt",
+    {
+        strings:["Friends","Family","Officemates"],
+        typeSpeed:150,
+        backSpeed:150,
+        loop:true
+    })
+</script>
+<script src="js/menu.js"></script>

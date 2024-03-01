@@ -1,0 +1,169 @@
+.nav-item a:link, a:visited
+{
+  color: white;
+  font-weight: 600;
+}
+.din
+{
+  font-weight: 600;
+  font-family: Monotype Corsiva;
+}
+.txt
+{
+  color: orangered;
+}
+.bookbtn
+{
+  background-color: orangered;
+  color: white;
+  font-weight: 600;
+  border: orangered 3px solid;
+  font-size: 25px;
+}
+.bookbtn:hover
+{
+  background-color: black;
+}
+#fd1
+{
+  height: 120px;
+  width: 60px;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 60px;
+  position: relative;
+}
+.fd2
+{
+  height:15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: 20px;
+  margin-top: 15px;
+  animation: anim 2s infinite;
+  position: absolute;
+}
+@keyframes anim
+{
+  from{top:0px; opacity: 0.5;}
+  to{top:40px; opacity: 0;}
+}
+.menuitem
+{
+  height: 150px;
+  width: 250px;
+  border: 3px solid white;
+  color: white;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+.hide:hover .menuitem
+{
+  display: block;
+  
+}
+.nav-pills>li.nav-item>.nav-link
+{
+  color: black;
+  width: 40vh;
+}
+.nav-pills>li.nav-item>.nav-link:focus
+{
+  background-color: orangered;
+  color:white;
+}
+.team:hover
+{
+  background-color: orangered;
+  color: white;
+}
+.backimg
+{
+  background-image: url(./Images/blog_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.galhide
+{
+  display: none;
+}
+.show:hover .galhide
+{
+  display:block;
+}
+.purchasebtn
+{
+  background-color: orangered;
+  color: white;
+  border: orangered 5px solid;
+  font-size: 25px;
+}
+.purchasebtn:hover
+{
+  background-color: transparent;
+  color: black;
+}
+#scrollspyHeading7 .card:hover
+{
+  box-shadow: 10px 10px 10px lightgray;
+  transform: scale(1.02,1.02);
+  transition: 1s;
+}
+input[type="text"],select,input[type="email"],input[type="date"],input[type="time"]
+{
+  height: 50px;
+  background-color: lightgray;
+  border: 2px dotted darkgray;
+  border-radius: 5px;
+}
+select
+{
+  height: 50px;
+  background-color: lightgray;
+  border: 2px dotted darkgray;
+  width: 400px;
+  border-radius: 5px;
+}
+.backimg1
+{
+  background-image: url(../Images/newsletter-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.backimg2
+{
+  background-image: url(../Images/footer_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.newsbtn
+{
+  background-color: orangered;
+  color: white;
+  border: orangered 2px dotted;
+  font-size: 25px;
+}
+.newbtn:hover
+{
+  background-color: white;
+  color: black;
+}
+.footerdiv
+{
+  background-color: orangered;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  border-top: white 2px dotted;
+  vertical-align: middle;
+}
